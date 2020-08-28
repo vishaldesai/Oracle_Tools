@@ -19,6 +19,7 @@ Python script unload Oracle tables to S3 in parquet format with little to no ite
 # Create configuration file
 
 Create configuration file and list all schema tables.
+[Example](https://github.com/vishaldesai/Oracle_Tools/blob/master/oracle_unload_to_s3/code/oracle_schema_table.csv)
 
 # Run code
 
