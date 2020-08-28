@@ -10,7 +10,7 @@ Python script unload Oracle tables to S3 in parquet format with little to no ite
 
 # Pre-requisites
 
-1. Create EC2 instance with r5n type
+1. Create EC2 instance (r5n instance type recommended)
 2. Install python3
 3. Install boto3, csv, argparse, sys, datetime, threading, cx_Oracle, os, logging, queue and subprocess python packages
 4. Install oracle instance client
@@ -42,4 +42,6 @@ python3 unload_ora_to_s3.py \
  ```
 
 ## Example
+
+[Example1]()
 
