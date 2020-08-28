@@ -36,7 +36,9 @@ CHANNELS                            .0625
 
 [](https://github.com/vishaldesai/Oracle_Tools/blob/master/oracle_unload_to_s3/example/snip2.PNG)
 
-3. Logfile
+3. Logfile and Validation
+
+[Logfile](https://github.com/vishaldesai/Oracle_Tools/blob/master/oracle_unload_to_s3/example/unload_ora_to_s3__Aug_28_2020-16_57_13.log)
 
 
 
