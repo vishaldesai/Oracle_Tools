@@ -40,5 +40,31 @@ CHANNELS                            .0625
 
 [Logfile](https://github.com/vishaldesai/Oracle_Tools/blob/master/oracle_unload_to_s3/example/unload_ora_to_s3__Aug_28_2020-16_57_13.log)
 
+Check for errors in log file:
+```
+cat unload_ora_to_s3_Aug_28_2020-16_57_13.log | grep -i error
+```
 
+How long entire job took? Job took 35 minutes to unload ~308 GB Oracle to S3.
+```
+head -1 unload_ora_to_s3_Aug_28_2020-16_57_13.log
+08-28 16:57 root         INFO     Establish Oracle Connection
+tail -1 unload_ora_to_s3_Aug_28_2020-16_57_13.log
+08-28 17:32 root         INFO     Dropping task for schema.table: SH.PROMOTIONS
+```
+
+How many chunks were created for SH.SALES?
+```
+cat unload_ora_to_s3_Aug_28_2020-16_57_13.log | egrep "Starting chunk"  | grep "SH.SALES" | wc -l
+636
+cat unload_ora_to_s3_Aug_28_2020-16_57_13.log | egrep "Finished chunk"  | grep "SH.SALES" | wc -l
+636
+```
+
+How long it took to extract large table SH.SALES?
+```
+cat unload_ora_to_s3_Aug_28_2020-16_57_13.log | egrep "Starting chunk|Finished chunk"  | grep "SH.SALES" | sed '1!{$!d;}'
+08-28 16:57 root         INFO     Starting chunk 8336 for SH.SALES
+08-28 17:23 root         INFO     Finished chunk 8968 for SH.SALES
+```
 
