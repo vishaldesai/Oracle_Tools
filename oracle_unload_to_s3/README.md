@@ -45,3 +45,8 @@ python3 unload_ora_to_s3.py \
 
 [Example1](https://github.com/vishaldesai/Oracle_Tools/blob/master/oracle_unload_to_s3/example/Example1.md)
 
+# Limitations
+
+1. Does not support CDC
+2. All table columns are extracted.
+3. Code is not tested for tables with lob data types.
