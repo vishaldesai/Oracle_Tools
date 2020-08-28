@@ -22,14 +22,16 @@ Create configuration file and list all schema tables.
 
 # Run code
 
+Update input parameters and run code. p_target_s3_chunk_mb can be increased to create large parquet files. Due to compression actual files created in S3 will be smaller than value set. p_parallel_threads can be tuned depending on the client EC2 instance size and number of concurrent connections that you want to run on Oracle database. 
+
 ```python
 python3 unload_ora_to_s3.py \
              --p_schema_table_config oracle_schema_table.csv \
-             --p_username sh \
-             --p_password sh \
+             --p_username username \
+             --p_password password \
              --p_oracle_host xx.xx.xx.xx \
              --p_service orcl --p_port 1521 \
-             --p_target_s3_bucket vishalemrfs \
+             --p_target_s3_bucket vishalbucket \
              --p_target_s3_chunk_mb 250 \
              --p_target_s3_compression snappy \
              --p_parallel_threads 32 \
@@ -37,4 +39,6 @@ python3 unload_ora_to_s3.py \
              --p_logging_level INFO \
              --p_logfile_location /root
  ```
+
+## Example
 
