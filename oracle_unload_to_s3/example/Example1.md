@@ -66,5 +66,17 @@ How long it took to extract large table SH.SALES?
 cat unload_ora_to_s3_Aug_28_2020-16_57_13.log | egrep "Starting chunk|Finished chunk"  | grep "SH.SALES" | sed '1!{$!d;}'
 08-28 16:57 root         INFO     Starting chunk 8336 for SH.SALES
 08-28 17:23 root         INFO     Finished chunk 8968 for SH.SALES
+
+How much data was generated on S3?
+```
+aws s3 ls --summarize --human-readable --recursive  s3://vishalemrfs/SH/ | grep "Total
+Total Objects: 940
+Total Size: 95.5 GiB
+```
+
+What is the average size of parquet files?
+```
+aws s3 ls --human-readable --recursive s3://vishalemrfs/SH/ | awk '{ total += $3; count++ } END { print total/count }'
+104.114 MB
 ```
 
