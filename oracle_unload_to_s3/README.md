@@ -27,7 +27,7 @@ python3 unload_ora_to_s3.py \
              --p_schema_table_config oracle_schema_table.csv \
              --p_username sh \
              --p_password sh \
-             --p_oracle_host 18.213.128.132 \
+             --p_oracle_host xx.xx.xx.xx \
              --p_service orcl --p_port 1521 \
              --p_target_s3_bucket vishalemrfs \
              --p_target_s3_chunk_mb 250 \
