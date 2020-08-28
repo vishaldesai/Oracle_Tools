@@ -30,7 +30,11 @@ CHANNELS                            .0625
 
 1. Screenshot of CPU, memory and network bandwidth utilization on Database server.
 
+[](https://github.com/vishaldesai/Oracle_Tools/blob/master/oracle_unload_to_s3/example/snip1.PNG)
+
 2. Top output from Client virtual machine.
+
+[](https://github.com/vishaldesai/Oracle_Tools/blob/master/oracle_unload_to_s3/example/snip2.PNG)
 
 3. Logfile
 
