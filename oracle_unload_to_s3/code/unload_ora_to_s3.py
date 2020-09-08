@@ -5,7 +5,8 @@
 #
 # Prereq        : 1 - Install python3
 #                 2 - Install boto3, csv, argparse, sys, datetime, threading, cx_Oracle, os, logging, queue and subprocess python packages
-#                 3 - Install oracle instance client
+#                 3 - Install awswrangler - https://pypi.org/project/awswrangler/
+#                 4 - Install oracle instance client
 #           
 # Assumptions   : 1 - Tables must be analyzed as code uses avg_row_len from dba_tables to determine rowid chunks
 #
