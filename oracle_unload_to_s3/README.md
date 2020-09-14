@@ -1,6 +1,6 @@
 
 # Problem Statement
-Unloading large Oracle schemas/tables to S3 in shortest possible time is challening task. There are various database replication tools that does the job but requires engineering effort to discover schema/tables, learn replication tool, create configuration and automation, size replication instances etc. When tables are large, engineers have to create multiple parallel tasks based on primary key range filters. If these ranges are too big, Oracle CBO may decide to do full table scan for parallel threads that will impact performance of existing application workload and full load.
+Unloading large Oracle schemas/tables to S3 in shortest possible time is challening task. There are various database replication tools that does the job but requires engineering effort to discover schema/tables, learn replication tool, create configuration and automation, size replication instances etc. When tables are large, engineers have to create multiple parallel tasks based on primary key range filters. If these ranges are too big, Oracle CBO may decide to do full table scan for every thread that will impact performance of existing application workload running on Oracle database as well as full load.
 
 # What does this script do?
 
@@ -36,9 +36,7 @@ python3 unload_ora_to_s3.py \
              --p_target_s3_chunk_mb 250 \
              --p_target_s3_compression snappy \
              --p_parallel_threads 32 \
-             --p_child_code_file unload_ora_to_s3_sub.py \
-             --p_logging_level INFO \
-             --p_logfile_location /root
+             --p_child_code_file unload_ora_to_s3_sub.py 
  ```
 
 ## Example
