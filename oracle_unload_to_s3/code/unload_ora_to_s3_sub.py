@@ -1,6 +1,6 @@
-#                 
+#
 # Purpose       : Unload Oracle tables data into S3
-# Author        : Vishal Desai -
+# Author        : Vishal Desai and Anand Prakash
 # Change        : 8/28/2020 - MVC release
 
 import argparse
@@ -19,3 +19,4 @@ wr.s3.to_parquet(
     path=s3path,
     compression=str(sys.argv[8])
 )
+
