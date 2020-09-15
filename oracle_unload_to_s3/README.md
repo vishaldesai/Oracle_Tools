@@ -15,6 +15,7 @@ Python script unload Oracle tables to S3 in parquet format with little to no ite
 3. Install boto3, csv, argparse, sys, datetime, threading, cx_Oracle, os, logging, queue and subprocess python packages
 4. Install oracle instance client
 5. Oracle database user must have read table privileges and execute permission on DBMS_PARALLEL_EXECUTE
+6. Database Tables must be analyzed.
 
 ## Create configuration file
 
