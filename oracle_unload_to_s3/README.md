@@ -4,7 +4,7 @@ Unloading large Oracle schemas/tables to S3 in shortest possible time is challen
 
 # What does this script do?
 
-Python script unload Oracle tables to S3 in parquet format with little to no iteration and other challenges mentioned above.
+Python script unload Oracle tables to S3 in parquet format with little to no iteration.
 
 # Implementation
 
