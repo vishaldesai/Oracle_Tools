@@ -2,7 +2,7 @@
 ## Environment details:
 
 1. Oracle Database running on EC2 r5n.2xlarge.
-2. Table with LOB data is generated using [Script](https://github.com/vishaldesai/Oracle_Tools/blob/master/oracle_unload_lob_to_s3/example/generate_lob_data.sql)
+2. Table test data was generated using [Script](https://github.com/vishaldesai/Oracle_Tools/blob/master/oracle_unload_lob_to_s3/example/generate_lob_data.sql)
 
 ```
 SQL> select segment_name,bytes/1024/1024 "SizeMB" from dba_segments where owner='SH' and segment_name in ('T1','T1_CL_SEG');
