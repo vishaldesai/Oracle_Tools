@@ -33,7 +33,7 @@ https://bucket/SH/T1/CL/2.txt - Another clob content here
 
 ## Create configuration file
 
-Create configuration file and list all schema tables.
+Create configuration files.
 [Example](https://github.com/vishaldesai/Oracle_Tools/blob/master/oracle_unload_lob_to_s3/code/oracle_schema_table.csv)
 [Example](https://github.com/vishaldesai/Oracle_Tools/blob/master/oracle_unload_lob_to_s3/code/oracle_schema_table_lob.csv)
 
