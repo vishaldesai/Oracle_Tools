@@ -1,0 +1,159 @@
+2020-09-29 16:56:23,160 -             get_args - INFO - Arguments specified..
+2020-09-29 16:56:23,160 -             get_args - INFO - Input value specified for p_schema_table_config is - oracle_schema_table.csv
+2020-09-29 16:56:23,160 -             get_args - INFO - Input value specified for p_schema_table_lob_config is - oracle_schema_table_lob.csv
+2020-09-29 16:56:23,160 -             get_args - INFO - Input value specified for p_username is - sh
+2020-09-29 16:56:23,160 -             get_args - INFO - Input value specified for p_oracle_host is - 18.213.128.132
+2020-09-29 16:56:23,160 -             get_args - INFO - Input value specified for p_service is - orcl
+2020-09-29 16:56:23,160 -             get_args - INFO - Input value specified for p_port is - 1521
+2020-09-29 16:56:23,160 -             get_args - INFO - Input value specified for p_target_s3_bucket is - oracletos3demo
+2020-09-29 16:56:23,160 -             get_args - INFO - Input value specified for p_target_s3_lob_bucket is - oracletos3demo1
+2020-09-29 16:56:23,160 -             get_args - INFO - Input value specified for p_target_s3_chunk_mb is - 25
+2020-09-29 16:56:23,160 -             get_args - INFO - Input value specified for p_target_s3_compression is - snappy
+2020-09-29 16:56:23,160 -             get_args - INFO - Input value specified for p_parallel_threads is - 32
+2020-09-29 16:56:23,160 -             get_args - INFO - Input value specified for p_child_code_file is - unload_ora_to_s3_sub.py
+2020-09-29 16:56:23,161 -             get_args - INFO - Input value specified for p_child_code_lob_file is - unload_ora_lob_to_s3_sub.py
+2020-09-29 16:56:23,161 -             get_args - INFO - Input value specified for p_verbose is - info
+2020-09-29 16:56:25,113 -                 main - INFO - Establish Oracle Connection
+2020-09-29 16:56:25,145 -                 main - INFO - Process list of Schema/Table from input csv config file
+2020-09-29 16:56:25,146 -                 main - INFO - Creating task for schema.table: SH.T1
+2020-09-29 16:56:25,146 -                 main - INFO - Executing SQL to verify for pre-existing task name: SH.T1
+2020-09-29 16:56:25,147 -                 main - INFO - No pre-exisitng task found, creating a new task.
+2020-09-29 16:56:25,149 -                 main - INFO - New task SH.T1 created successfully
+2020-09-29 16:56:25,150 -                 main - INFO - Creating rowid chunks for schema.table: SH.T1
+2020-09-29 16:56:25,157 -                 main - INFO - Reading chunks from DBA_PARALLEL_EXECUTE_CHUNKS to execute task in parallel.
+2020-09-29 16:56:25,179 -        process_tasks - INFO - Starting chunk 17929 for SH.T1
+2020-09-29 16:56:25,180 -        process_tasks - INFO - Starting chunk 17930 for SH.T1
+2020-09-29 16:56:25,181 -        process_tasks - INFO - Starting chunk 17931 for SH.T1
+2020-09-29 16:56:25,183 -        process_tasks - INFO - Starting chunk 17932 for SH.T1
+2020-09-29 16:56:25,184 -        process_tasks - INFO - Starting chunk 17933 for SH.T1
+2020-09-29 16:56:25,184 -        process_tasks - INFO - Starting chunk 17934 for SH.T1
+2020-09-29 16:56:25,187 -        process_tasks - INFO - Starting chunk 17935 for SH.T1
+2020-09-29 16:56:25,188 -        process_tasks - INFO - Starting chunk 17936 for SH.T1
+2020-09-29 16:56:25,189 -        process_tasks - INFO - Starting chunk 17937 for SH.T1
+2020-09-29 16:56:25,190 -        process_tasks - INFO - Starting chunk 17938 for SH.T1
+2020-09-29 16:56:25,193 -        process_tasks - INFO - Starting chunk 17939 for SH.T1
+2020-09-29 16:56:25,194 -        process_tasks - INFO - Starting chunk 17940 for SH.T1
+2020-09-29 16:56:25,196 -        process_tasks - INFO - Starting chunk 17941 for SH.T1
+2020-09-29 16:56:25,198 -        process_tasks - INFO - Starting chunk 17942 for SH.T1
+2020-09-29 16:56:25,199 -        process_tasks - INFO - Starting chunk 17943 for SH.T1
+2020-09-29 16:56:25,200 -        process_tasks - INFO - Starting chunk 17944 for SH.T1
+2020-09-29 16:56:25,202 -        process_tasks - INFO - Starting chunk 17945 for SH.T1
+2020-09-29 16:56:25,204 -        process_tasks - INFO - Starting chunk 17946 for SH.T1
+2020-09-29 16:56:25,204 -        process_tasks - INFO - Starting chunk 17947 for SH.T1
+2020-09-29 16:56:25,208 -        process_tasks - INFO - Starting chunk 17948 for SH.T1
+2020-09-29 16:56:25,209 -        process_tasks - INFO - Starting chunk 17949 for SH.T1
+2020-09-29 16:56:25,209 -        process_tasks - INFO - Starting chunk 17950 for SH.T1
+2020-09-29 16:56:26,591 -        process_tasks - INFO - Finished chunk 17934 for SH.T1
+2020-09-29 16:56:26,608 -        process_tasks - INFO - Finished chunk 17940 for SH.T1
+2020-09-29 16:56:26,625 -        process_tasks - INFO - Finished chunk 17942 for SH.T1
+2020-09-29 16:56:26,670 -        process_tasks - INFO - Finished chunk 17950 for SH.T1
+2020-09-29 16:56:26,725 -        process_tasks - INFO - Finished chunk 17937 for SH.T1
+2020-09-29 16:56:26,731 -        process_tasks - INFO - Finished chunk 17945 for SH.T1
+2020-09-29 16:56:26,761 -        process_tasks - INFO - Finished chunk 17948 for SH.T1
+2020-09-29 16:56:26,812 -        process_tasks - INFO - Finished chunk 17949 for SH.T1
+2020-09-29 16:56:26,815 -        process_tasks - INFO - Finished chunk 17931 for SH.T1
+2020-09-29 16:56:26,840 -        process_tasks - INFO - Finished chunk 17929 for SH.T1
+2020-09-29 16:56:26,861 -        process_tasks - INFO - Finished chunk 17935 for SH.T1
+2020-09-29 16:56:26,874 -        process_tasks - INFO - Finished chunk 17947 for SH.T1
+2020-09-29 16:56:26,885 -        process_tasks - INFO - Finished chunk 17939 for SH.T1
+2020-09-29 16:56:26,926 -        process_tasks - INFO - Finished chunk 17943 for SH.T1
+2020-09-29 16:56:26,937 -        process_tasks - INFO - Finished chunk 17941 for SH.T1
+2020-09-29 16:56:26,953 -        process_tasks - INFO - Finished chunk 17946 for SH.T1
+2020-09-29 16:56:26,956 -        process_tasks - INFO - Finished chunk 17938 for SH.T1
+2020-09-29 16:56:26,985 -        process_tasks - INFO - Finished chunk 17936 for SH.T1
+2020-09-29 16:56:26,996 -        process_tasks - INFO - Finished chunk 17932 for SH.T1
+2020-09-29 16:56:27,039 -        process_tasks - INFO - Finished chunk 17933 for SH.T1
+2020-09-29 16:56:27,080 -        process_tasks - INFO - Finished chunk 17930 for SH.T1
+2020-09-29 16:56:27,082 -        process_tasks - INFO - Finished chunk 17944 for SH.T1
+2020-09-29 16:56:27,082 -                 main - INFO - Processed table data queue
+2020-09-29 16:56:27,082 -    process_lob_tasks - INFO - Starting lob chunk 17929 for SH.T1 column CL
+2020-09-29 16:56:27,082 -    process_lob_tasks - INFO - Starting lob chunk 17929 for SH.T1 column BL
+2020-09-29 16:56:27,083 -    process_lob_tasks - INFO - Starting lob chunk 17930 for SH.T1 column CL
+2020-09-29 16:56:27,083 -    process_lob_tasks - INFO - Starting lob chunk 17930 for SH.T1 column BL
+2020-09-29 16:56:27,084 -    process_lob_tasks - INFO - Starting lob chunk 17931 for SH.T1 column CL
+2020-09-29 16:56:27,085 -    process_lob_tasks - INFO - Starting lob chunk 17931 for SH.T1 column BL
+2020-09-29 16:56:27,086 -    process_lob_tasks - INFO - Starting lob chunk 17932 for SH.T1 column CL
+2020-09-29 16:56:27,088 -    process_lob_tasks - INFO - Starting lob chunk 17932 for SH.T1 column BL
+2020-09-29 16:56:27,088 -    process_lob_tasks - INFO - Starting lob chunk 17933 for SH.T1 column CL
+2020-09-29 16:56:27,091 -    process_lob_tasks - INFO - Starting lob chunk 17933 for SH.T1 column BL
+2020-09-29 16:56:27,092 -    process_lob_tasks - INFO - Starting lob chunk 17934 for SH.T1 column CL
+2020-09-29 16:56:27,092 -    process_lob_tasks - INFO - Starting lob chunk 17934 for SH.T1 column BL
+2020-09-29 16:56:27,094 -    process_lob_tasks - INFO - Starting lob chunk 17935 for SH.T1 column CL
+2020-09-29 16:56:27,097 -    process_lob_tasks - INFO - Starting lob chunk 17935 for SH.T1 column BL
+2020-09-29 16:56:27,099 -    process_lob_tasks - INFO - Starting lob chunk 17936 for SH.T1 column CL
+2020-09-29 16:56:27,100 -    process_lob_tasks - INFO - Starting lob chunk 17936 for SH.T1 column BL
+2020-09-29 16:56:27,102 -    process_lob_tasks - INFO - Starting lob chunk 17937 for SH.T1 column CL
+2020-09-29 16:56:27,102 -    process_lob_tasks - INFO - Starting lob chunk 17937 for SH.T1 column BL
+2020-09-29 16:56:27,102 -    process_lob_tasks - INFO - Starting lob chunk 17938 for SH.T1 column CL
+2020-09-29 16:56:27,103 -    process_lob_tasks - INFO - Starting lob chunk 17938 for SH.T1 column BL
+2020-09-29 16:56:27,104 -    process_lob_tasks - INFO - Starting lob chunk 17939 for SH.T1 column CL
+2020-09-29 16:56:27,105 -    process_lob_tasks - INFO - Starting lob chunk 17939 for SH.T1 column BL
+2020-09-29 16:56:27,108 -    process_lob_tasks - INFO - Starting lob chunk 17940 for SH.T1 column CL
+2020-09-29 16:56:27,111 -    process_lob_tasks - INFO - Starting lob chunk 17940 for SH.T1 column BL
+2020-09-29 16:56:27,113 -    process_lob_tasks - INFO - Starting lob chunk 17941 for SH.T1 column CL
+2020-09-29 16:56:27,115 -    process_lob_tasks - INFO - Starting lob chunk 17941 for SH.T1 column BL
+2020-09-29 16:56:27,118 -    process_lob_tasks - INFO - Starting lob chunk 17942 for SH.T1 column CL
+2020-09-29 16:56:27,120 -    process_lob_tasks - INFO - Starting lob chunk 17942 for SH.T1 column BL
+2020-09-29 16:56:27,122 -    process_lob_tasks - INFO - Starting lob chunk 17943 for SH.T1 column CL
+2020-09-29 16:56:27,126 -    process_lob_tasks - INFO - Starting lob chunk 17943 for SH.T1 column BL
+2020-09-29 16:56:27,128 -    process_lob_tasks - INFO - Starting lob chunk 17944 for SH.T1 column CL
+2020-09-29 16:56:27,131 -    process_lob_tasks - INFO - Starting lob chunk 17944 for SH.T1 column BL
+2020-09-29 16:56:28,814 -    process_lob_tasks - INFO - Finished lob chunk 17931 for SH.T1 column BL
+2020-09-29 16:56:28,815 -    process_lob_tasks - INFO - Starting lob chunk 17945 for SH.T1 column CL
+2020-09-29 16:56:29,006 -    process_lob_tasks - INFO - Finished lob chunk 17937 for SH.T1 column BL
+2020-09-29 16:56:29,007 -    process_lob_tasks - INFO - Starting lob chunk 17945 for SH.T1 column BL
+2020-09-29 16:56:29,217 -    process_lob_tasks - INFO - Finished lob chunk 17934 for SH.T1 column BL
+2020-09-29 16:56:29,218 -    process_lob_tasks - INFO - Starting lob chunk 17946 for SH.T1 column CL
+2020-09-29 16:56:29,404 -    process_lob_tasks - INFO - Finished lob chunk 17940 for SH.T1 column BL
+2020-09-29 16:56:29,404 -    process_lob_tasks - INFO - Starting lob chunk 17946 for SH.T1 column BL
+2020-09-29 16:56:29,881 -    process_lob_tasks - INFO - Finished lob chunk 17939 for SH.T1 column BL
+2020-09-29 16:56:29,881 -    process_lob_tasks - INFO - Starting lob chunk 17947 for SH.T1 column CL
+2020-09-29 16:56:29,899 -    process_lob_tasks - INFO - Finished lob chunk 17942 for SH.T1 column BL
+2020-09-29 16:56:29,899 -    process_lob_tasks - INFO - Starting lob chunk 17947 for SH.T1 column BL
+2020-09-29 16:56:29,932 -    process_lob_tasks - INFO - Finished lob chunk 17938 for SH.T1 column BL
+2020-09-29 16:56:29,933 -    process_lob_tasks - INFO - Starting lob chunk 17948 for SH.T1 column CL
+2020-09-29 16:56:29,957 -    process_lob_tasks - INFO - Finished lob chunk 17943 for SH.T1 column BL
+2020-09-29 16:56:29,958 -    process_lob_tasks - INFO - Starting lob chunk 17948 for SH.T1 column BL
+2020-09-29 16:56:30,430 -    process_lob_tasks - INFO - Finished lob chunk 17941 for SH.T1 column BL
+2020-09-29 16:56:30,430 -    process_lob_tasks - INFO - Starting lob chunk 17949 for SH.T1 column CL
+2020-09-29 16:56:30,565 -    process_lob_tasks - INFO - Finished lob chunk 17945 for SH.T1 column BL
+2020-09-29 16:56:30,566 -    process_lob_tasks - INFO - Starting lob chunk 17949 for SH.T1 column BL
+2020-09-29 16:56:31,401 -    process_lob_tasks - INFO - Finished lob chunk 17948 for SH.T1 column BL
+2020-09-29 16:56:31,402 -    process_lob_tasks - INFO - Starting lob chunk 17950 for SH.T1 column CL
+2020-09-29 16:56:31,531 -    process_lob_tasks - INFO - Finished lob chunk 17936 for SH.T1 column BL
+2020-09-29 16:56:31,531 -    process_lob_tasks - INFO - Starting lob chunk 17950 for SH.T1 column BL
+2020-09-29 16:56:31,708 -    process_lob_tasks - INFO - Finished lob chunk 17933 for SH.T1 column BL
+2020-09-29 16:56:31,794 -    process_lob_tasks - INFO - Finished lob chunk 17930 for SH.T1 column BL
+2020-09-29 16:56:31,843 -    process_lob_tasks - INFO - Finished lob chunk 17935 for SH.T1 column BL
+2020-09-29 16:56:31,850 -    process_lob_tasks - INFO - Finished lob chunk 17932 for SH.T1 column BL
+2020-09-29 16:56:31,997 -    process_lob_tasks - INFO - Finished lob chunk 17944 for SH.T1 column BL
+2020-09-29 16:56:32,043 -    process_lob_tasks - INFO - Finished lob chunk 17929 for SH.T1 column BL
+2020-09-29 16:56:32,424 -    process_lob_tasks - INFO - Finished lob chunk 17950 for SH.T1 column CL
+2020-09-29 16:56:32,448 -    process_lob_tasks - INFO - Finished lob chunk 17950 for SH.T1 column BL
+2020-09-29 16:56:33,204 -    process_lob_tasks - INFO - Finished lob chunk 17946 for SH.T1 column BL
+2020-09-29 16:56:33,818 -    process_lob_tasks - INFO - Finished lob chunk 17947 for SH.T1 column BL
+2020-09-29 16:56:33,886 -    process_lob_tasks - INFO - Finished lob chunk 17949 for SH.T1 column BL
+2020-09-29 16:56:43,521 -    process_lob_tasks - INFO - Finished lob chunk 17931 for SH.T1 column CL
+2020-09-29 16:56:51,811 -    process_lob_tasks - INFO - Finished lob chunk 17937 for SH.T1 column CL
+2020-09-29 16:57:20,243 -    process_lob_tasks - INFO - Finished lob chunk 17948 for SH.T1 column CL
+2020-09-29 16:57:25,959 -    process_lob_tasks - INFO - Finished lob chunk 17940 for SH.T1 column CL
+2020-09-29 16:57:32,956 -    process_lob_tasks - INFO - Finished lob chunk 17934 for SH.T1 column CL
+2020-09-29 16:58:05,579 -    process_lob_tasks - INFO - Finished lob chunk 17945 for SH.T1 column CL
+2020-09-29 16:58:42,925 -    process_lob_tasks - INFO - Finished lob chunk 17942 for SH.T1 column CL
+2020-09-29 16:59:08,909 -    process_lob_tasks - INFO - Finished lob chunk 17943 for SH.T1 column CL
+2020-09-29 16:59:35,650 -    process_lob_tasks - INFO - Finished lob chunk 17939 for SH.T1 column CL
+2020-09-29 17:00:27,248 -    process_lob_tasks - INFO - Finished lob chunk 17938 for SH.T1 column CL
+2020-09-29 17:00:34,461 -    process_lob_tasks - INFO - Finished lob chunk 17941 for SH.T1 column CL
+2020-09-29 17:04:42,069 -    process_lob_tasks - INFO - Finished lob chunk 17935 for SH.T1 column CL
+2020-09-29 17:05:21,451 -    process_lob_tasks - INFO - Finished lob chunk 17946 for SH.T1 column CL
+2020-09-29 17:05:34,175 -    process_lob_tasks - INFO - Finished lob chunk 17949 for SH.T1 column CL
+2020-09-29 17:05:49,287 -    process_lob_tasks - INFO - Finished lob chunk 17936 for SH.T1 column CL
+2020-09-29 17:06:02,307 -    process_lob_tasks - INFO - Finished lob chunk 17933 for SH.T1 column CL
+2020-09-29 17:06:15,366 -    process_lob_tasks - INFO - Finished lob chunk 17930 for SH.T1 column CL
+2020-09-29 17:06:40,963 -    process_lob_tasks - INFO - Finished lob chunk 17929 for SH.T1 column CL
+2020-09-29 17:06:51,441 -    process_lob_tasks - INFO - Finished lob chunk 17932 for SH.T1 column CL
+2020-09-29 17:06:53,479 -    process_lob_tasks - INFO - Finished lob chunk 17947 for SH.T1 column CL
+2020-09-29 17:06:54,026 -    process_lob_tasks - INFO - Finished lob chunk 17944 for SH.T1 column CL
+2020-09-29 17:06:54,026 -                 main - INFO - Processed table LOB data queue
+2020-09-29 17:06:54,026 -                 main - INFO - Dropping the tasks SH.T1
+2020-09-29 17:06:54,030 -                 main - INFO - Task SH.T1 is dropped successfully
