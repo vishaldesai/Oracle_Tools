@@ -17,6 +17,7 @@ S3 Parquet file
 | 2  | 20       | 90000   | https://bucket/SH/T1/CL/2.txt  |
   
 https://bucket/SH/T1/CL/1.txt - Large clob content here
+
 https://bucket/SH/T1/CL/2.txt - Another clob content here
 
 # Implementation
