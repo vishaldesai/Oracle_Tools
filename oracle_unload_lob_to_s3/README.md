@@ -35,11 +35,11 @@ https://bucket/SH/T1/CL/2.txt - Another clob content here
 
 Create configuration file and list all schema tables.
 [Example](https://github.com/vishaldesai/Oracle_Tools/blob/master/oracle_unload_lob_to_s3/code/oracle_schema_table.csv)
-[Example](https://github.com/vishaldesai/Oracle_Tools/blob/master/oracle_unload_lob_to_s3/code/oracle_schema_lob_table.csv)
+[Example](https://github.com/vishaldesai/Oracle_Tools/blob/master/oracle_unload_lob_to_s3/code/oracle_schema_table_lob.csv)
 
 ## Run code
 
-Update input parameters and run code. p_target_s3_chunk_mb can be increased to create large parquet files. Due to compression S3 file sizes will be smaller than s3 chunk size setting. p_parallel_threads can be tuned depending on the client EC2 instance size and number of concurrent connections that you want to run on Oracle database.  
+Update input parameters and run code.  Due to compression S3 file sizes will be smaller than s3 chunk size setting. p_parallel_threads can be tuned depending on the client EC2 instance size and number of concurrent connections that you want to run on Oracle database.  
 
 ```python
 python3 unload_ora_to_s3.py \
@@ -50,7 +50,7 @@ python3 unload_ora_to_s3.py \
 	--p_service orcl \
 	--p_port 1521 \
 	--p_target_s3_bucket bucketname \
-	--p_target_s3_chunk_mb 250 \
+	--p_target_s3_chunk_mb 50 \
 	--p_target_s3_compression snappy \
 	--p_parallel_threads 32 \
 	--p_child_code_file unload_ora_to_s3_sub.py \
