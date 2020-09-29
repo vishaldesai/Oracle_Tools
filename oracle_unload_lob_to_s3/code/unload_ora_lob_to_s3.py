@@ -97,7 +97,7 @@ def get_args():
     p_child_code_lob_file = options.p_child_code_lob_file.strip()
     log_mode = options.p_verbose.strip().lower()
 
-    log_file_name = '/tmp/oracle_unload_to_s3_' + (datetime.datetime.now()).strftime("%b_%d_%Y-%H_%M_%S") + '.log'
+    log_file_name = '/tmp/oracle_unload_lob_to_s3_' + (datetime.datetime.now()).strftime("%b_%d_%Y-%H_%M_%S") + '.log'
     logger = set_logging(log_mode, log_file_name)
 
     logger.info("Arguments specified..")
