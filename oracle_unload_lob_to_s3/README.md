@@ -4,20 +4,20 @@
 Python script extracts Oracle tables with LOB data to S3 in parquet format. Script stores pointer in parquet file for CLOB and BLOB columns and original content of unstructured columns will be stored in different bucket/prefixes.
 
 Example:
-Oracle Table
+Oracle Table SH.T1
 | id | shortnum | longnum | cl                        |
 |----|----------|---------|---------------------------|
 | 1  | 50       | 9000    | Large clob content here   |
 | 2  | 20       | 90000   | Another clob content here |
 
 S3 Parquet file
-| id | shortnum | longnum | cl                                                           |
-|----|----------|---------|--------------------------------------------------------------|
-| 1  | 50       | 9000    | https://<lobbucket>/<schema>/<tablename>/<columnname>/1.txt  |
-| 2  | 20       | 90000   | https://<lobbucket>/<schema>/<tablename>/<columnname>/2.txt  |
+| id | shortnum | longnum | cl                             |
+|----|----------|---------|--------------------------------|
+| 1  | 50       | 9000    | https://bucket/SH/T1/CL/1.txt  |
+| 2  | 20       | 90000   | https://bucket/SH/T1/CL/2.txt  |
   
-https://<lobbucket>/<schema>/<tablename>/<columnname>/1.txt - Large clob content here
-https://<lobbucket>/<schema>/<tablename>/<columnname>/2.txt - Another clob content here
+https://bucket/SH/T1/CL/1.txt - Large clob content here
+https://bucket/SH/T1/CL/2.txt - Another clob content here
 
 # Implementation
 
